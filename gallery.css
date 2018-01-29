@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+html {
+    background-color: grey;
+}
+
+h2 {
+    Font-family:arial;
+}
+
+li {
+    float: left;
+    list-style: none;
+    font-family: arial;
+}
+
+li a {
+    display: block;
+    color: gainsboro;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.active {
+    background-color: #4CAF50;
+    color:white;
+}
+
+.header {grid-area: header;}
+.menu {grid-area: menu;}
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img3 {grid-area: img3;}
+.img4 {grid-area: img4;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'img1 img1 img1 img2 img2 img2'
+            'img3 img3 img3 img4 img4 img4';
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, .3);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
